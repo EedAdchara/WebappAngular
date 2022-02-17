@@ -1,0 +1,26 @@
+<div class="container">
+  <h2>Categories</h2>
+  <div class="form-group my-3">
+    <input
+      type="text"
+      class="form-control"
+      placeholder="Search..."
+      [formControl]="keyword"
+    />
+  </div>
+  <p class="my-2">Total: {{ total }}</p>
+  <table class="table">
+    <thead class="thead-dark">
+      <tr>
+        <th scope="col">No.</th>
+        <th scope="col">Name</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let category of filterCategory; index as i">
+        <td>{{ i + 1 }}</td>
+        <td>{{ category }}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>

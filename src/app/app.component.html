@@ -1,0 +1,28 @@
+<div class="container">
+  <h1 class="mt-5">Section 2</h1>
+  <p>Please commit the codes to your personal git repository and send the links to the git repositories back to the reviewer.</p>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item"><a class="nav-link" routerLinkActive="active" [routerLink]="['prime-number']">Question1: Prime Number</a></li>
+          <li class="nav-item"><a class="nav-link" routerLinkActive="active" [routerLink]="['filter-search']">Question2: Filter Search</a></li>
+          <li class="nav-item"><a class="nav-link" routerLinkActive="active" [routerLink]="['nodejs']">Question3: Node.js</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</div>
+
+<div class="container" style="padding-top: 30px;">
+  <router-outlet></router-outlet>
+</div>
+
+<footer class="footer">
+  <div class="container" style="padding-top: 60px;">
+      <p class="text-muted">My Web Angular By Adchara Auntanun</p>
+  </div>
+</footer>

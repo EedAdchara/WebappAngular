@@ -1,0 +1,24 @@
+<h2>Pirme Number</h2>
+<p></p>
+<div class="container">
+  <div class="table-responsive">
+    <table class="table table-bordered border-primary">
+      <tbody>
+        <tr>
+          <td><input type="number"
+            #nameInput
+            [value]="myValue"
+            [(ngModel)]="myValue"
+        ></td>
+          <td>
+            <select [(ngModel)]="calculateChoice">
+              <option value="isPrime">isPrime</option>
+              <option value="isFibonacci">isFibonacci</option>
+            </select>
+          </td>
+          <td><span>{{ calculateChoice === 'isPrime' ? isPrime(myValue) : isFibonacci(myValue) }}</span></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
